@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-/* Preline UI */
-@import "../vendor/preline/variants.css";
-
 /* Basic styling for Preline components */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
