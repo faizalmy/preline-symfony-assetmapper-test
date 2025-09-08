@@ -26,4 +26,8 @@ return [
         'version' => '4.1.13',
         'type' => 'css',
     ],
+    'preline/variants.css' => [
+        'version' => '3.2.3',
+        'type' => 'css',
+    ],
 ];
