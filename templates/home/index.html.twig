@@ -1,11 +1,183 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}AssetMapper Test{% endblock %}
+{% block title %}AssetMapper Test - Tailwind + Preline{% endblock %}
 
 {% block body %}
-<div style="text-align: center; padding: 50px;">
-    <h1>Symfony AssetMapper Test</h1>
-    <p>This page demonstrates that AssetMapper is working correctly.</p>
-    <p>Check the browser console to see the JavaScript message from AssetMapper!</p>
+<div class="min-h-screen bg-gray-50 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header Section -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Symfony AssetMapper Test</h1>
+            <p class="text-xl text-gray-600 mb-2">Tailwind CSS + Preline UI Components</p>
+            <p class="text-sm text-gray-500">Check the browser console to see the JavaScript message from AssetMapper!</p>
+        </div>
+
+        <!-- Tailwind CSS Demo Section -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8">Tailwind CSS Demo</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Card 1</h3>
+                    <p class="text-gray-600">This card uses Tailwind utility classes</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Card 2</h3>
+                    <p class="text-gray-600">Responsive grid layout</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Card 3</h3>
+                    <p class="text-gray-600">Built with AssetMapper</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Preline Components Demo Section -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8">Preline Components Demo</h2>
+
+            <!-- Basic Button Component -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Basic Button Component</h3>
+                <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                    Primary Button
+                </button>
+            </div>
+
+            <!-- Dropdown Component -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Dropdown Component</h3>
+                <div class="hs-dropdown relative inline-flex">
+                    <button id="hs-dropdown-basic" type="button" class="hs-dropdown-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700">
+                        Dropdown
+                        <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+
+                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-2 mt-2 dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-basic">
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:outline-none dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
+                            About
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:outline-none dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
+                            Downloads
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:outline-none dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
+                            Account
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tooltip Component -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Tooltip Component</h3>
+                <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-green-600 text-white hover:bg-green-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-hs-tooltip='{"placement":"top","content":"This is a tooltip"}'>
+                    Hover me for tooltip
+                </button>
+            </div>
+
+            <!-- Accordion Component -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Accordion Component</h3>
+                <div class="hs-accordion-group">
+                    <div class="hs-accordion hs-accordion-active:is-active bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700" id="hs-basic-with-title-and-description-heading-one">
+                        <button class="hs-accordion-toggle group py-4 px-5 inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 disabled:max-w-xs disabled:text-neutral-400 disabled:pointer-events-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="true" aria-controls="hs-basic-with-title-and-description-collapse-one">
+                            <svg class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                            <svg class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                            Accordion #1
+                        </button>
+                        <div id="hs-basic-with-title-and-description-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-description-heading-one">
+                            <div class="pb-4 px-5">
+                                <p class="text-gray-800 dark:text-neutral-200">
+                                    This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Component -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Modal Component</h3>
+                <!-- Modal Trigger Button -->
+                <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-purple-600 text-white hover:bg-purple-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-hs-overlay="#hs-modal-basic">
+                    Open Modal
+                </button>
+
+                <!-- Modal Component -->
+                <div id="hs-modal-basic" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto">
+                    <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto">
+                        <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-800 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                            <div class="flex justify-between items-center py-3 px-4 border-b dark:border-neutral-700">
+                                <h3 class="font-bold text-gray-800 dark:text-white">
+                                    Modal title
+                                </h3>
+                                <button type="button" class="flex justify-center items-center size-7 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-700" data-hs-overlay="#hs-modal-basic">
+                                    <span class="sr-only">Close</span>
+                                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 6-12 12"/><path d="m6 6 12 12"/></svg>
+                                </button>
+                            </div>
+                            <div class="p-4 overflow-y-auto">
+                                <p class="mt-1 text-gray-800 dark:text-neutral-400">
+                                    This is a wider card with supporting text below as a natural lead-in to additional content.
+                                </p>
+                            </div>
+                            <div class="flex justify-end items-center gap-x-2 py-3 px-4 border-t dark:border-neutral-700">
+                                <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700" data-hs-overlay="#hs-modal-basic">
+                                    Close
+                                </button>
+                                <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                                    Save changes
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alert Component -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Alert Component</h3>
+                <div class="bg-blue-50 border border-blue-200 text-sm text-blue-800 rounded-lg p-4 dark:bg-blue-800/10 dark:border-blue-900/20 dark:text-blue-400" role="alert">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <svg class="flex-shrink-0 size-4 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="m12 17 .01 0"/></svg>
+                        </div>
+                        <div class="ms-3">
+                            <h3 class="text-sm font-semibold">
+                                This is an info alert
+                            </h3>
+                            <div class="mt-2 text-sm text-blue-700 dark:text-blue-400">
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Badge Component -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Badge Component</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800 dark:text-blue-200">
+                        Badge
+                    </span>
+                    <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                        Secondary
+                    </span>
+                    <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-200">
+                        Success
+                    </span>
+                    <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-800 dark:text-red-200">
+                        Danger
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-gray-500 text-sm">
+            <p>Built with Symfony AssetMapper + Tailwind CSS + Preline UI</p>
+        </div>
+    </div>
 </div>
 {% endblock %}

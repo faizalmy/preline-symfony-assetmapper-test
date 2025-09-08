@@ -13,3 +13,8 @@
 /public/assets/
 /assets/vendor/
 ###< symfony/asset-mapper ###
+
+###> node.js ###
+node_modules/
+package-lock.json
+###< node.js ###

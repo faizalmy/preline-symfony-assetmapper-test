@@ -17,17 +17,17 @@ return [
         'entrypoint' => true,
     ],
     'preline' => [
-        'version' => '3.2.3',
+        'path' => './assets/vendor/preline/preline.js',
+    ],
+    'preline/variants.css' => [
+        'path' => './assets/vendor/preline/variants.css',
+        'type' => 'css',
     ],
     'tailwindcss' => [
         'version' => '4.1.13',
     ],
     'tailwindcss/index.min.css' => [
         'version' => '4.1.13',
-        'type' => 'css',
-    ],
-    'preline/variants.css' => [
-        'version' => '3.2.3',
         'type' => 'css',
     ],
 ];
