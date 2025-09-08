@@ -3,7 +3,7 @@ symfonycasts_tailwind:
     binary_version: 'v4.1.11'
 
     # Use custom Tailwind config file
-    config_file: 'tailwind.config.js'
+    # config_file: 'tailwind.config.js'
 
     # Alternatively, you can specify the path to the binary that you manage yourself
     #binary: 'node_modules/.bin/tailwindcss'
