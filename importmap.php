@@ -16,4 +16,14 @@ return [
         'path' => './assets/app.js',
         'entrypoint' => true,
     ],
+    'preline' => [
+        'version' => '3.2.3',
+    ],
+    'tailwindcss' => [
+        'version' => '4.1.13',
+    ],
+    'tailwindcss/index.min.css' => [
+        'version' => '4.1.13',
+        'type' => 'css',
+    ],
 ];

@@ -1,6 +1,6 @@
-# Symfony AssetMapper Test Project
+# Symfony AssetMapper + Preline UI Project
 
-This is a fresh Symfony 7.1 project with AssetMapper configured and ready for development.
+This is a Symfony 7.1 project with AssetMapper and Preline UI fully integrated and ready for development.
 
 ## Setup
 
@@ -8,6 +8,7 @@ The project has been created with the following components:
 
 - **Symfony 7.1** - Latest stable version
 - **AssetMapper** - Modern asset management without Webpack/Node.js
+- **Preline UI 3.2.3** - Modern UI component library
 - **Basic template structure** - Ready for development
 
 ## Project Structure
@@ -35,6 +36,16 @@ The project has been created with the following components:
 - **Assets path**: `assets/`
 - **Entry point**: `app.js`
 - **Missing import mode**: `strict` (development), `warn` (production)
+- **Preline UI**: Installed via `importmap:require preline`
+
+## Preline UI Integration
+
+Preline UI has been installed and configured following AssetMapper best practices:
+
+1. **Installation**: `php bin/console importmap:require preline`
+2. **Import**: Added to `assets/app.js` with `import 'preline'`
+3. **Initialization**: Auto-initialization on DOM ready
+4. **Components**: Sample components in home template
 
 ## Development Server
 
@@ -52,12 +63,20 @@ Visit: https://127.0.0.1:8001
 - `php bin/console importmap:require <package>` - Add npm packages
 - `php bin/console importmap:update` - Update import map
 
+## Testing the Integration
+
+Visit the application at https://127.0.0.1:8001 to see:
+- Preline UI components in action
+- Responsive design with Tailwind CSS classes
+- JavaScript initialization working
+- AssetMapper serving assets correctly
+
 ## Next Steps
 
 This project is ready for:
-- Adding Preline UI components
-- Integrating Tailwind CSS
-- Building custom JavaScript modules
+- Building custom Preline UI components
 - Adding more controllers and templates
+- Integrating additional npm packages via AssetMapper
+- Customizing Preline themes and components
 
-No additional integration has been performed - this is a clean, default AssetMapper setup.
+The integration is complete and follows Symfony AssetMapper best practices.
